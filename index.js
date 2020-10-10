@@ -107,6 +107,4 @@ app.get('/', (req, res) => {
     res.send('Server Running')
 })
 
-app.listen(port, () => {
-    console.log(`Server Running`)
-})
+app.listen(process.env.PORT || port)
